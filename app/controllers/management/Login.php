@@ -19,8 +19,6 @@ class Login extends CI_Controller
 			redirect(base_url("management"));
 		}
 
-		$data['token'] = $this->security->get_csrf_hash();
-
 		$this->load->view('management/login');
 
 	}
